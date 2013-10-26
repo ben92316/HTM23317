@@ -9,10 +9,12 @@ header ul{
 	list-style-type:none;
   float:left;
   margin-top:1.5em;
+  padding-left: 120px;
 }
 header li{
 	float:left;
   margin:1em;
+  font-weight: bold;
 }
 header div{
 	color:gray;
@@ -29,7 +31,6 @@ font-size: 20px;
 }
 .info h1{
 font-size: 40px;
-  padding-top:100px;
 }
 .info ul{
 list-style-type: none;
@@ -65,16 +66,13 @@ float:left;
   list-style-type:none;
   padding-left:0;
 }
-.attachment li{
-	padding:0.5em;
-  border-top:0;
-}
 .attachment li:first-child figure{
 	border-top:1px solid #ccc
 }
 .attachment p{
 	text-align:center;
   clear:left;
+  padding: 20px;
 }
 .attachment figure{
 	 margin:0px;
@@ -82,9 +80,6 @@ float:left;
   color:#666;
   font-size:13px;
   border:1px solid #ccc;
-}
-.attachment .head{
-	font-weight:bold;
 }
 span{
   font-weight: bold;
