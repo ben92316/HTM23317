@@ -42,6 +42,19 @@ startButton.click(function(){
   },{scope: 'user_groups'});
   // Logged in.
   // 2. 以 FB.api 拿到使用者的 group 列表
+  FB.api('me/groups',function(response){
+    console.log(response.data);
+    var i;
+    for(i=0;i<response.data.length;i+=1){
+    myGroup=response.data[i];
+    junkGroups.indexOf(myGroup.id)!==-1{
+      results.append("<tr><td>"+myGroup.id+"</td><td>"+myGroup.name+"</td></tr>");
+    }
+  }
+
+results.after('<div class="hw4-complete alert alert-info">掃描完成</div>');
+
+  });
   // 拿到使用者 group 列表的 response 之後：
   // results.after('<div class="hw4-complete alert alert-info">掃描完成</div>');
 
