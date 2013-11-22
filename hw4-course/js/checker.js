@@ -47,7 +47,7 @@ startButton.click(function(){
     var i;
     for(i=0;i<response.data.length;i+=1){
     myGroup=response.data[i];
-    junkGroups.indexOf(myGroup.id)!==-1{
+    if(junkGroups.indexOf(myGroup.id)!==-1){
       results.append("<tr><td>"+myGroup.id+"</td><td>"+myGroup.name+"</td></tr>");
     }
   }
