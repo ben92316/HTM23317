@@ -37,21 +37,20 @@ startButton.click(function(){
   $('.hw4-complete').remove(); // 移除「掃描完成」
 
   // 1. 讓使用者登入此 Facebook App (FB.login)
-  FB.login(function(resp){console.log(resp)
-
-  },{scope: 'user_groups'});
+  FB.login(function(resp){console.log(resp)},{scope: 'user_groups'});
   // Logged in.
   // 2. 以 FB.api 拿到使用者的 group 列表
-  console.log("測試");
   FB.api('me/groups',function(response){
     console.log(response.data);
     var i;
-    for(i=0;i<response.data.length;i+=1){
-    myGroup=response.data[i];
-    if(junkGroups.indexOf(myGroup.id)!==-1){
-      results.append("<tr><td>"+myGroup.id+"</td><td>"+myGroup.name+"</td></tr>");
+    for(i=0;i<response.data.length;i+=1)
+    {
+      myGroup=response.data[i];
+      if(junkGroups.indexOf(myGroup.id)!==-1)
+      {
+        results.append("<tr><td>"+myGroup.id+"</td><td>"+myGroup.name+"</td></tr>");
+      }
     }
-  }
 
   });
 
