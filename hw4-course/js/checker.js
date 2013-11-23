@@ -42,7 +42,7 @@ startButton.click(function(){
   },{scope: 'user_groups'});
   // Logged in.
   // 2. 以 FB.api 拿到使用者的 group 列表
-  
+  console.log("測試");
   FB.api('me/groups',function(response){
     console.log(response.data);
     var i;
