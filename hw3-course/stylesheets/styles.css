@@ -7628,32 +7628,36 @@ td.visible-print {
     display: none !important;
   }
 }
-/* line 17, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
+.gd-header {
+  text-align: center;
+}
+/* line 20, ../sass/styles.scss */
 .gd-header ul {
   padding-left: 0;
   list-style-type: none;
 }
-/* line 22, ../sass/styles.scss */
+/* line 25, ../sass/styles.scss */
 .gd-header.affix {
   top: 0;
   width: 100%;
   background: #fff;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
 }
-/* line 28, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 .gd-header.affix h1 {
   display: none;
 }
-/* line 32, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .gd-header.affix + * {
   margin-top: 99px;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .gd-jumbotron {
   background: url('../images/slider.png?1384859610');
 }
-/* line 43, ../sass/styles.scss */
+/* line 49, ../sass/styles.scss */
 .gd-jumbotron h2 span {
   padding: 0 0.25em;
   font-size: 72px;
@@ -7663,15 +7667,15 @@ td.visible-print {
   font-weight: normal;
 }
 
-/* line 54, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 .gd-expertise dt {
   font-weight: normal;
 }
-/* line 57, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 .gd-expertise dd {
   margin-left: 0;
 }
-/* line 60, ../sass/styles.scss */
+/* line 66, ../sass/styles.scss */
 .gd-expertise .progress {
   margin-bottom: 3px;
   height: 14px;
@@ -7684,39 +7688,46 @@ td.visible-print {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 66, ../sass/styles.scss */
+/* line 72, ../sass/styles.scss */
 .gd-expertise .progress-striped .bar {
   background-color: #5BC0DE;
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .gd-well {
   margin: 5em 0;
 }
-/* line 73, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 .gd-well h3 {
   margin-top: 0;
 }
-/* line 76, ../sass/styles.scss */
+/* line 82, ../sass/styles.scss */
 .gd-well p {
   margin-bottom: 0;
 }
-/* line 79, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .gd-well .btn {
   margin-top: 15px;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 .gd-service {
   background: url('../images/dark-bg.jpg?1384859610');
   padding: 5em 0;
   margin-bottom: 5em;
 }
-/* line 89, ../sass/styles.scss */
+/* line 95, ../sass/styles.scss */
 .gd-service h1 {
   color: #fff;
 }
-/* line 93, ../sass/styles.scss */
+/* line 98, ../sass/styles.scss */
+.gd-service i {
+  background-image: none;
+  width: 72px;
+  height: 72px;
+  font-size: 72px;
+}
+/* line 105, ../sass/styles.scss */
 .gd-service .well {
   height: 550px;
   border: 1px solid #666;
@@ -7724,12 +7735,12 @@ td.visible-print {
   color: #fff;
 }
 
-/* line 105, ../sass/styles.scss */
+/* line 117, ../sass/styles.scss */
 .gd-contact {
   padding-bottom: 5em;
 }
 
-/* line 109, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 #gd-map-canvas {
   width: 100%;
   height: 360px;

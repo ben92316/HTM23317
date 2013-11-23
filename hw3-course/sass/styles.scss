@@ -4,6 +4,7 @@
 // I gather this file is a starting point for the project.
 @import "bootstrap";
 
+
 @import "compass";
 
 // gd- prefix:
@@ -11,27 +12,31 @@
 // with Twitter Bootstrap class names.
 
 .gd-header{
+
+  text-align: center;
   //
   // 
   //
-ul{
-  padding-left: 0;
-  list-style-type:none; 
-}
+  ul{
+    padding-left: 0;
+    list-style-type: none;
+  }
 
   &.affix{
     top: 0;
     width: 100%;
     background: #fff;
-    box-shadow: 0 0 16px rgba(#000,0.15);
-    // The next element should have a top-margin so that the entire page
+    box-shadow: 0 0 16px rgba(#000, 0.15);
+
     h1{
       display: none;
     }
+    // The next element should have a top-margin so that the entire page
     // dont jump high when .affix is applied.
-     + *{
-       margin-top: 99px;
-     }
+    + *{
+      // margin-top: 126px;
+      margin-top: 99px;
+    }
   }
 }
 
@@ -40,6 +45,7 @@ ul{
   // 
   //
   background: image-url('slider.png');
+
   h2 span{
     padding: 0 0.25em;
     font-size: 72px;
@@ -89,6 +95,12 @@ ul{
   h1{
     color: #fff;
   }
+ i{
+background-image: none;
+width: 72px;
+height: 72px;
+font-size: 72px;
+}
 
   .well{
     height: 550px;
